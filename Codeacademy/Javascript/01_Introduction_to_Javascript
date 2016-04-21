@@ -1,0 +1,93 @@
+JavaScript (JS), a programming language.
+ 
+ 
+It can be used for:
+- make websites respond to user interaction
+- build apps and games (e.g. blackjack)
+- access information on the Internet (e.g. find out the top trending words on Twitter by topic)
+- organize and present data (e.g. automate spreadsheet work; data visualization)
+ 
+==========
+ 
+.length
+'<string>'.length. gives you the length of a string
+Length counts every character in the string - including spaces!
+ 
+ 
+Maths
++ addition
+- subtraction
+* multiplication
+/ division
+( ) control order of operations
+% modulo 
+	- divides and returns the remainder
+	- good at testing divisibility. if remainder is 0, it is divisible.
+
+ 
+Errors
+If you use words that aren't in the JavaScript language, it will get confused and give you an error like:
+        ReferenceError: 'foo' is not defined
+       
+ 
+Comments
+Start a single-line comment with '//'
+        //This is a comment and will not run as code
+       
+ 
+confirm()
+Takes a string. Displays a confirmation pop-up with the string and a confirmation button.
+These boxes can be used on websites to confirm things with users. You've probably seen them pop up when you try to delete important things or leave a website with unsaved changes.
+ 
+ 
+prompt()
+Takes a string and displays a pop-up with the string and a text entry field.
+ 
+ 
+Data Types
+numbers: quantities, just like you're used to. You can do math with them.
+        To make a number in your code, just write a number as numerals without quotes: 42, 190.12334.
+strings: are sequences of characters, like the letters a-z, spaces, and even numbers. These are all strings: "Ryan", "4" and "What is your name?" Strings are extremely useful as labels, names, and content for your programs.
+        To write a string, surround words with quotes: "What is your name?"
+Booleans: A boolean is either true or false.
+        For example, comparing two numbers returns a true or false result:
+        23 > 10 is true
+        5 < 4 is false
+ 
+ 
+Console.log
+You may have noticed that the interpreter doesn't print out every single thing it does. So if we want to know what it's thinking, we sometimes have to ask it to speak to us.
+console.log() will take whatever is inside the parentheses and log it to the console below your code—that's why it's called console.log()!
+This is commonly called printing out.
+ 
+ 
+Comparison Operators
+> Greater than
+< Less than
+<= Less than or equal to
+>= Greater than or equal to
+=== Equal to
+!== Not equal to
+ 
+if()
+An if statement is made up of the if keyword, a condition like we've seen before, and a pair of curly braces { }. If the answer to the condition is yes, the code inside the curly braces will run.
+ 
+ 
+if()/else
+Just like before, if the condition is true, then only the code inside the first pair of curly braces will run. Otherwise, the condition is false, so only the code inside the second pair of curly braces after the else keyword will run.	
+
+
+Substrings
+Allows you to manipulate strings. You can display parts of a string by passing in the start and finish of the substring you want to display.
+	"some words".substring(x,y)
+x is the start and y is the finish.
+
+Each character in a string is numbered starting from 0, like this:
+0 1 2 3 4
+| | | | | 
+h e l l o
+ 
+ 
+
+
+  
