@@ -1,3 +1,47 @@
+https://app.pluralsight.com/player?course=javascript-programming-basics&author=kyle-simpson&name=javascript-programming-basics-m1&clip=0&mode=live
+
 - Source code is for the developer: another dev or even for you later on. 
 - Source code compiles into machine code that a computer can understand.
 
+
+The syntax of a program language can be thought of like the grammar for spoken/written language.
+
+Statements
+-A statement in a computer language is a group of words, numbers, and operators that performs a specific task. In JavaScript, a statement might look as follows:
+
+	a = b * 2;
+	
+Like sentences, statements can also be compound; accomplishing more than one task. But typically there's a 1-to-1 relationship between a statement and what you want to do.
+
+In JS, a completed statement ends in a semicolon ";". Though not always.
+
+
+Keyword = a word that has special meaning in the language, e.g. "function" or "var".
+Identifier = variable
+
+
+
+Expressions
+Statements are comprised of parts called expressions.
+
+	a = b * 2;
+	
+Is comprised of several expresion. 
+- 2 is a literal expression. an expressed literal value
+- b is an identifier expression. because we identified b.
+- b * 2 is a multiplication expression/arithmetic expression. because we did math
+- a = b * 2 is an assignment expression. because it's being assigned.
+
+If we surround the expressions with parentheses:
+
+	((a) = ((b) * (2)));
+
+and the whole this is a statement.
+
+example
+a = b * 2 + foo(c * 3);
+[[a] = [[[b] * [2]] + [foo([[c] * [3]])]]];
+
+
+
+Operator precedence = order of operations
