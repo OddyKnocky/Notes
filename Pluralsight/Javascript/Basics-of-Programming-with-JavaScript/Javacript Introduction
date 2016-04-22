@@ -49,10 +49,10 @@ Operator precedence = order of operations
 
 High level language		Natural language		Set variable a to equal 2
 |						
-|						Javascript				a = 2
-|						Assembly				mov 2,a
+|				Javascript			a = 2
+|				Assembly			mov 2,a
 V						
-Low level languages		Binary					0001001010101010101010110...
+Low level languages		Binary				0001001010101010101010110...
 
 
 Scripting vs compiled languages
