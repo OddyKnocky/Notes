@@ -1,8 +1,5 @@
 https://app.pluralsight.com/player?course=javascript-programming-basics&author=kyle-simpson&name=javascript-programming-basics-m1&clip=0&mode=live
 
-- Source code is for the developer: another dev or even for you later on. 
-- Source code compiles into machine code that a computer can understand.
-
 
 The syntax of a program language can be thought of like the grammar for spoken/written language.
 
@@ -20,7 +17,7 @@ Keyword = a word that has special meaning in the language, e.g. "function" or "v
 Identifier = variable
 
 
-
+https://app.pluralsight.com/library/courses/developing-sharepoint-2013-javascript
 Expressions
 Statements are comprised of parts called expressions.
 
@@ -42,6 +39,7 @@ example
 a = b * 2 + foo(c * 3);
 [[a] = [[[b] * [2]] + [foo([[c] * [3]])]]];
 
+
 Operator precedence = order of operations
 
 
@@ -49,10 +47,10 @@ Operator precedence = order of operations
 
 High level language		Natural language		Set variable a to equal 2
 |						
-|				Javascript			a = 2
-|				Assembly			mov 2,a
+|						Javascript				a = 2
+|						Assembly				mov 2,a
 V						
-Low level languages		Binary				0001001010101010101010110...
+Low level languages		Binary					0001001010101010101010110...
 
 
 Scripting vs compiled languages
@@ -67,7 +65,81 @@ ex:
 	2	2();
 	
 A script engine would start running, run line 1 and then throw a runtime error at line 2.
-A compiler would throw an error at the first pass that checks for correct syntax.
+A compiler would throw an error at the first pass that checks for correct syntax. It looks at all lines before trying to run any lines.
 
 JavaScript is actually compiled. JS will look at the code and throw an error at line 2 before line 1 runs.
-Versus somethiing like Bash where line 1 would run then fail.
+	JS does have runtime errors too. Source code can pass syntax, but then do something invalid at runtime.
+Versus something like Bash where line 1 would run then fail.
+
+
+
+The most common way to print out messages in JS is console.log. This is because server-side JS environments might not have things like alert windows.
+
+
+Some Consoles return "undefined" after a statements because there are some statement expressions that have no return value.
+
+
+
+
+============================================
+JavaScript Syntax
+============================================
+
+|Operators|
+Operators, e.g. +,-,=,==,===, etc.
+
+There are about 30 operators in JS.
+
+Don't mix single quotes or double quotes just for consistency. There is no functional difference between the two.
+
+
+|Values and Types|
+Converting from one variable type to another is called "coercion". 
+	a = String(a);
+	b = Number(a);
+	
+JavaScript variables do not have types, the values have types. This differs from static languages that have types for variables, e.g. certain variables that can only hold intergers or strings, etc.
+
+
+|Code Comments|
+Comment out code with "//" for single-line comments. Or "/*" and */" for multi-line comments. 
+Write good comments. Good comments don't say what; they should only say why or how. The code says what's happening. 
+
+
+|Variables and Blocks|
+Always formally declare your variables; preferably before you use it. 
+	var a;
+	a = 42;
+
+or combine them
+
+	var a = 42;
+
+
+This is also completely valid due to "hoisting". But it makes the source code less clear.
+	a = 42;
+	var a;
+
+
+A block is usually a collection of statements that represent a logical unit surrounded by curly braces "{}". Stylistically, you could use a block to emphasize common statements.
+	var b;
+	
+	{
+		var a;
+		a = 2;
+	}
+	
+	var c;
+The curly braces by themselves don't functionally do anything.
+
+Blocks are usually attached to statements, like the "if", "while", "for", or function statements.
+	var a = 42;
+	if(a > 10){
+		a = 10;
+		foo(a / 2);
+	}
+Blocks attached to statements only get executed in the context of that statement. Like in functions; the attached block on runs when the function is called.
+	function foo() {
+		var a = 10;
+		bar(a / 2);
+	}
