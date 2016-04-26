@@ -138,7 +138,7 @@ Blocks are usually attached to statements, like the "if", "while", "for", or fun
 		a = 10;
 		foo(a / 2);
 	}
-Blocks attached to statements only get executed in the context of that statement. Like in functions; the attached block on runs when the function is called.
+Blocks attached to statements only get executed in the context of that statement. Like when an if-statement validates to "true", the block will run. Or in the case of functions; the attached block on runs when the function is called.
 	function foo() {
 		var a = 10;
 		bar(a / 2);
