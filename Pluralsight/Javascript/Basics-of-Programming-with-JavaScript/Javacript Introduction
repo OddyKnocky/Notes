@@ -147,3 +147,19 @@ Blocks attached to statements only get executed in the context of that statement
 
 |Functions|
 A function is a way to logicallly group a piece of code together, like a block, but it also allows you to call that block of code more than once.
+
+
+|Scope|
+There's a difference between the variables that exist outside of functions and varibles that exist outside of functions.
+	function foo(){
+		var c = 42;
+		var a = 12;
+		c * 2;
+	}
+	var c = 6;
+The first var c is scoped within the function foo. The second var is scoped outside of function foo.
+You can always access variables that are higher than your scope, but never any that are further down. Like var a within foo(), you would not be able to access that variable from a different function.
+
+
+
+	
