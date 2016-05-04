@@ -1,7 +1,7 @@
 https://app.pluralsight.com/player?course=javascript-programming-basics&author=kyle-simpson&name=javascript-programming-basics-m1&clip=0&mode=live
 
 
-The syntax of a program language can be thought of like the grammar for spoken/written language.
+The rules for valid format and combinations of instructions is called a computer language, sometimes referred to as its syntax. The syntax of a program language can be thought of like the grammar for spoken/written language. 
 
 Statements
 -A statement in a computer language is a group of words, numbers, and operators that performs a specific task. In JavaScript, a statement might look as follows:
