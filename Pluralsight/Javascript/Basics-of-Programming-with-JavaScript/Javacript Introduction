@@ -8,9 +8,26 @@ Statements
 
 	a = b * 2;
 	
+This statement has four expressions in it:
+
+2 is a literal value expression
+b is a variable expression, which means to retrieve its current value
+b * 2 is an arithmetic expression, which means to do the multiplication
+a = b * 2 is an assignment expression, which means to assign the result of the b * 2 expression to the variable a
+
 Like sentences, statements can also be compound; accomplishing more than one task. But typically there's a 1-to-1 relationship between a statement and what you want to do.
 
 In JS, a completed statement ends in a semicolon ";". Though not always.
+
+A general expression that stands alone is also called an expression statement
+	
+	b * 2;
+
+They generally aren't useful since nothing is really happening after the expression is run.
+
+A more common expression statement is a call expression statement (see "Functions"), as the entire statement is the function call expression itself:
+
+	alert( a );
 
 
 Keyword = a word that has special meaning in the language, e.g. "function" or "var".
